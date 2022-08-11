@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="text.css">
+</head>
+<body>
+
+<p style="font-size: larger; font-weight: 500; color: black">Let's check whether you're bot or not</p>
+<p style="font-size: larger; font-weight: 500">Answer these questions to prove that you're Human</p>
+
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Click here to answer the Questions</button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <body style="text-align: center;background-image:url(/simpleloginpage/Chatbot-Vs-Talkbot-1024x558.jpg) ; background-size: 800px 800px ; background-repeat: no-repeat; background-size: cover;"></body>
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>What is your name?</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+        
+      <button type="submit">Next</button>
+    </div>
+
+  </form>
+</div>
+<script>
+    // Get the modal
+    var modal = document.getElementById('id01');
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    </script>
+</body>
+</html>
